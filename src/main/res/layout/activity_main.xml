@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical">
 
         <ImageView
@@ -40,12 +41,12 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="16dp"
                     android:layout_marginTop="16dp"
-                    android:fontFamily="sans-serif-medium"
                     android:gravity="center_horizontal"
-                    android:text="♤ Duo/Player 1 ♧"
+                    android:text="@string/player_one"
                     android:textColor="#000"
                     android:textSize="14sp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    app:fontFamily="sans-serif-medium" />
 
                 <Button
                     android:layout_width="match_parent"
@@ -54,7 +55,7 @@
                     android:layout_marginLeft="24dp"
                     android:layout_marginRight="24dp"
                     android:onClick="add1DuoOne"
-                    android:text="+1 point" />
+                    android:text="@string/one_point" />
 
                 <Button
                     android:layout_width="match_parent"
@@ -63,7 +64,7 @@
                     android:layout_marginLeft="24dp"
                     android:layout_marginRight="24dp"
                     android:onClick="add3DuoOne"
-                    android:text="+3 points" />
+                    android:text="@string/three_points" />
 
                 <Button
                     android:layout_width="match_parent"
@@ -72,7 +73,7 @@
                     android:layout_marginLeft="24dp"
                     android:layout_marginRight="24dp"
                     android:onClick="add6DuoOne"
-                    android:text="+6 points" />
+                    android:text="@string/six_points" />
 
                 <Button
                     android:layout_width="match_parent"
@@ -81,52 +82,52 @@
                     android:layout_marginLeft="24dp"
                     android:layout_marginRight="24dp"
                     android:onClick="add9DuoOne"
-                    android:text="+9 points" />
+                    android:text="@string/nine_points" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="5dp"
                     android:layout_marginTop="16dp"
-                    android:fontFamily="sans-serif-medium"
                     android:gravity="center_horizontal"
-                    android:text="Round point(s):"
+                    android:text="@string/round"
                     android:textColor="#000"
                     android:textSize="12sp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    app:fontFamily="sans-serif-medium" />
 
                 <TextView
                     android:id="@+id/duo_one_score"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif-light"
                     android:gravity="center_horizontal"
-                    android:text="0"
+                    android:text="@string/zero_point"
                     android:textColor="#000"
-                    android:textSize="24sp" />
+                    android:textSize="24sp"
+                    app:fontFamily="sans-serif-light" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="5dp"
                     android:layout_marginTop="16dp"
-                    android:fontFamily="sans-serif-medium"
                     android:gravity="center_horizontal"
-                    android:text="Match(es) won:"
+                    android:text="@string/match"
                     android:textColor="#000"
                     android:textSize="14sp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    app:fontFamily="sans-serif-medium" />
 
                 <TextView
                     android:id="@+id/duo_one_match"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="24dp"
-                    android:fontFamily="sans-serif-light"
                     android:gravity="center_horizontal"
-                    android:text="0"
+                    android:text="@string/zero_point"
                     android:textColor="#000"
-                    android:textSize="42dp" />
+                    android:textSize="42sp"
+                    app:fontFamily="sans-serif-light" />
 
             </LinearLayout>
 
@@ -134,7 +135,7 @@
                 android:layout_width="1dp"
                 android:layout_height="match_parent"
                 android:layout_marginTop="16dp"
-                android:background="#c0c0c0"></View>
+                android:background="#c0c0c0" />
 
             <LinearLayout
                 android:layout_width="0dp"
@@ -148,12 +149,12 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="16dp"
                     android:layout_marginTop="16dp"
-                    android:fontFamily="sans-serif-medium"
                     android:gravity="center_horizontal"
-                    android:text="♡ Duo/Player 2 ♢"
+                    android:text="@string/player_two"
                     android:textColor="#b40000"
                     android:textSize="14sp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    app:fontFamily="sans-serif-medium" />
 
                 <Button
                     android:layout_width="match_parent"
@@ -162,7 +163,7 @@
                     android:layout_marginLeft="24dp"
                     android:layout_marginRight="24dp"
                     android:onClick="add1DuoTwo"
-                    android:text="+1 point" />
+                    android:text="@string/one_point" />
 
                 <Button
                     android:layout_width="match_parent"
@@ -171,7 +172,7 @@
                     android:layout_marginLeft="24dp"
                     android:layout_marginRight="24dp"
                     android:onClick="add3DuoTwo"
-                    android:text="+3 points" />
+                    android:text="@string/three_points" />
 
                 <Button
                     android:layout_width="match_parent"
@@ -180,7 +181,7 @@
                     android:layout_marginLeft="24dp"
                     android:layout_marginRight="24dp"
                     android:onClick="add6DuoTwo"
-                    android:text="+6 points" />
+                    android:text="@string/six_points" />
 
                 <Button
                     android:layout_width="match_parent"
@@ -189,75 +190,71 @@
                     android:layout_marginLeft="24dp"
                     android:layout_marginRight="24dp"
                     android:onClick="add9DuoTwo"
-                    android:text="+9 points" />
+                    android:text="@string/nine_points" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="5dp"
                     android:layout_marginTop="16dp"
-                    android:fontFamily="sans-serif-medium"
                     android:gravity="center_horizontal"
-                    android:text="Round point(s):"
+                    android:text="@string/round"
                     android:textColor="#b40000"
                     android:textSize="12sp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    app:fontFamily="sans-serif-medium" />
 
                 <TextView
                     android:id="@+id/duo_two_score"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif-light"
                     android:gravity="center_horizontal"
-                    android:text="0"
+                    android:text="@string/zero_point"
                     android:textColor="#b40000"
-                    android:textSize="24dp" />
+                    android:textSize="24sp"
+                    app:fontFamily="sans-serif-light" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="5dp"
                     android:layout_marginTop="16dp"
-                    android:fontFamily="sans-serif-medium"
                     android:gravity="center_horizontal"
-                    android:text="Match(es) won:"
+                    android:text="@string/match"
                     android:textColor="#b40000"
                     android:textSize="14sp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    app:fontFamily="sans-serif-medium" />
 
                 <TextView
                     android:id="@+id/duo_two_match"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="24dp"
-                    android:fontFamily="sans-serif-light"
                     android:gravity="center_horizontal"
-                    android:text="0"
+                    android:text="@string/zero_point"
                     android:textColor="#b40000"
-                    android:textSize="42dp" />
+                    android:textSize="42sp"
+                    app:fontFamily="sans-serif-light" />
 
             </LinearLayout>
 
         </LinearLayout>
 
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="resetScore"
+            android:text="@string/reset" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/cardsbar" />
+
     </LinearLayout>
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="32dp"
-        android:layout_marginLeft="24dp"
-        android:layout_marginRight="24dp"
-        android:onClick="resetScore"
-        android:text="Reset" />
 
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="25dp"
-        android:layout_alignParentBottom="true"
-        android:scaleType="centerCrop"
-        android:src="@drawable/cardsbar" />
-
-</RelativeLayout>
+</ScrollView>
